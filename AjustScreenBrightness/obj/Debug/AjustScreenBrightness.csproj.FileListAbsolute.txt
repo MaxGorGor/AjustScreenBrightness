@@ -1,0 +1,10 @@
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csprojAssemblyReference.cache
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.Properties.Resources.resources
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.UserControl.AjustDisplayControl.resources
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csproj.GenerateResource.cache
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csproj.CoreCompileInputs.cache
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.exe.config
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.exe
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.pdb
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.exe
+D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.pdb
