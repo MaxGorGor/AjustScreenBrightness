@@ -44,6 +44,9 @@ namespace AjustScreenBrightness.UserControl
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
+            this.lblBrightnessVal = new System.Windows.Forms.Label();
+            this.lblContrastVal = new System.Windows.Forms.Label();
+            this.lblGammaVal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.plGamma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGamma)).BeginInit();
@@ -71,6 +74,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // plGamma
             // 
+            this.plGamma.Controls.Add(this.lblGammaVal);
             this.plGamma.Controls.Add(this.tbGamma);
             this.plGamma.Controls.Add(this.lblGamma);
             this.plGamma.Location = new System.Drawing.Point(6, 135);
@@ -80,7 +84,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // tbGamma
             // 
-            this.tbGamma.Location = new System.Drawing.Point(80, 4);
+            this.tbGamma.Location = new System.Drawing.Point(55, 4);
             this.tbGamma.Maximum = 200;
             this.tbGamma.Name = "tbGamma";
             this.tbGamma.Size = new System.Drawing.Size(209, 45);
@@ -90,7 +94,7 @@ namespace AjustScreenBrightness.UserControl
             // lblGamma
             // 
             this.lblGamma.AutoSize = true;
-            this.lblGamma.Location = new System.Drawing.Point(19, 11);
+            this.lblGamma.Location = new System.Drawing.Point(5, 11);
             this.lblGamma.Name = "lblGamma";
             this.lblGamma.Size = new System.Drawing.Size(41, 12);
             this.lblGamma.TabIndex = 9;
@@ -98,6 +102,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // plContrast
             // 
+            this.plContrast.Controls.Add(this.lblContrastVal);
             this.plContrast.Controls.Add(this.lblContrast);
             this.plContrast.Controls.Add(this.tbContrast);
             this.plContrast.Location = new System.Drawing.Point(6, 76);
@@ -108,7 +113,7 @@ namespace AjustScreenBrightness.UserControl
             // lblContrast
             // 
             this.lblContrast.AutoSize = true;
-            this.lblContrast.Location = new System.Drawing.Point(19, 11);
+            this.lblContrast.Location = new System.Drawing.Point(5, 11);
             this.lblContrast.Name = "lblContrast";
             this.lblContrast.Size = new System.Drawing.Size(53, 12);
             this.lblContrast.TabIndex = 10;
@@ -116,7 +121,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // tbContrast
             // 
-            this.tbContrast.Location = new System.Drawing.Point(80, 4);
+            this.tbContrast.Location = new System.Drawing.Point(55, 4);
             this.tbContrast.Name = "tbContrast";
             this.tbContrast.Size = new System.Drawing.Size(209, 45);
             this.tbContrast.TabIndex = 9;
@@ -124,6 +129,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // plBrightness
             // 
+            this.plBrightness.Controls.Add(this.lblBrightnessVal);
             this.plBrightness.Controls.Add(this.lblBright);
             this.plBrightness.Controls.Add(this.tbBrightness);
             this.plBrightness.Location = new System.Drawing.Point(6, 17);
@@ -134,7 +140,7 @@ namespace AjustScreenBrightness.UserControl
             // lblBright
             // 
             this.lblBright.AutoSize = true;
-            this.lblBright.Location = new System.Drawing.Point(19, 11);
+            this.lblBright.Location = new System.Drawing.Point(5, 11);
             this.lblBright.Name = "lblBright";
             this.lblBright.Size = new System.Drawing.Size(41, 12);
             this.lblBright.TabIndex = 9;
@@ -142,7 +148,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // tbBrightness
             // 
-            this.tbBrightness.Location = new System.Drawing.Point(80, 4);
+            this.tbBrightness.Location = new System.Drawing.Point(55, 4);
             this.tbBrightness.Name = "tbBrightness";
             this.tbBrightness.Size = new System.Drawing.Size(209, 45);
             this.tbBrightness.TabIndex = 8;
@@ -174,6 +180,33 @@ namespace AjustScreenBrightness.UserControl
             this.btnOK.TabIndex = 10;
             this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
+            // 
+            // lblBrightnessVal
+            // 
+            this.lblBrightnessVal.AutoSize = true;
+            this.lblBrightnessVal.Location = new System.Drawing.Point(265, 11);
+            this.lblBrightnessVal.Name = "lblBrightnessVal";
+            this.lblBrightnessVal.Size = new System.Drawing.Size(41, 12);
+            this.lblBrightnessVal.TabIndex = 10;
+            this.lblBrightnessVal.Text = "label1";
+            // 
+            // lblContrastVal
+            // 
+            this.lblContrastVal.AutoSize = true;
+            this.lblContrastVal.Location = new System.Drawing.Point(265, 11);
+            this.lblContrastVal.Name = "lblContrastVal";
+            this.lblContrastVal.Size = new System.Drawing.Size(41, 12);
+            this.lblContrastVal.TabIndex = 11;
+            this.lblContrastVal.Text = "label2";
+            // 
+            // lblGammaVal
+            // 
+            this.lblGammaVal.AutoSize = true;
+            this.lblGammaVal.Location = new System.Drawing.Point(265, 11);
+            this.lblGammaVal.Name = "lblGammaVal";
+            this.lblGammaVal.Size = new System.Drawing.Size(41, 12);
+            this.lblGammaVal.TabIndex = 12;
+            this.lblGammaVal.Text = "label3";
             // 
             // AjustDisplayControl
             // 
@@ -211,5 +244,8 @@ namespace AjustScreenBrightness.UserControl
         private TrackBar tbBrightness;
         private Panel plGamma;
         private Panel plContrast;
+        private Label lblGammaVal;
+        private Label lblContrastVal;
+        private Label lblBrightnessVal;
     }
 }

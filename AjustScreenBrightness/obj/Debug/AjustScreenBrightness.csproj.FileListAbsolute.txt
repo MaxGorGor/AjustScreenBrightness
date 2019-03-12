@@ -8,3 +8,15 @@ D:\Code\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightn
 D:\Code\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.pdb
 D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.exe
 D:\Code\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.pdb
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.exe.config
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.exe
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\AjustScreenBrightness.pdb
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.Properties.Resources.resources
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.UserControl.AjustDisplayControl.resources
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csproj.GenerateResource.cache
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csproj.CoreCompileInputs.cache
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.exe
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.pdb
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Debug\igfxDHLib.dll
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csproj.CopyComplete
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Debug\AjustScreenBrightness.csprojAssemblyReference.cache

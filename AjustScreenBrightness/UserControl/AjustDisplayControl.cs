@@ -38,13 +38,15 @@ namespace AjustScreenBrightness.UserControl
                 return;
             }
 
+            this.btnOK.Visible = false;
+            this.btnCancel.Visible = false;
             this.groupBox1.Text = _cls.AjustTypeDes;
             this.tbBrightness.Maximum = 100;
-            this.tbBrightness.Minimum = 0;
-            this.tbContrast.Maximum = 1;
-            this.tbContrast.Minimum = 0;
-            this.tbGamma.Maximum = 200;
-            this.tbGamma.Minimum = 0;
+            this.tbBrightness.Minimum = -60;
+            this.tbContrast.Maximum = 80;
+            this.tbContrast.Minimum = 40;
+            this.tbGamma.Maximum = 100;
+            this.tbGamma.Minimum = 20;
 
             this.plBrightness.Visible = _cls.AllowBrightness;
             this.plContrast.Visible = _cls.AllowContrast;
@@ -54,18 +56,21 @@ namespace AjustScreenBrightness.UserControl
             {
                 this.tbBrightness.Value = _cls.GetBrightnessDefault();
                 _oriBrightness = this.tbBrightness.Value;
+                lblBrightnessVal.Text = this.tbBrightness.Value + "";
             }
 
             if (_cls.AllowContrast)
             {
                 this.tbContrast.Value = _cls.GetContrastDefault();
                 _oriContrast = this.tbContrast.Value;
+                lblContrastVal.Text = this.tbContrast.Value + "";
             }
 
             if (_cls.AllowGamma)
             {
                 this.tbGamma.Value = (int)(_cls.GetGammaDefault() * 100);
                 _oriGamma = this.tbGamma.Value;
+                lblGammaVal.Text = ((double)this.tbGamma.Value / 100) + "";
             }
 
         }
@@ -83,21 +88,38 @@ namespace AjustScreenBrightness.UserControl
         private void TbBrightness_ValueChanged(object sender, EventArgs e)
         {
             _cls.SetBrightnessDefault((short)this.tbBrightness.Value);
+            lblBrightnessVal.Text = this.tbBrightness.Value + "";
         }
 
         private void TbContrast_ValueChanged(object sender, EventArgs e)
         {
             _cls.SetContrastDefault((short)this.tbContrast.Value);
+            lblContrastVal.Text = this.tbContrast.Value + "";
         }
 
         private void TbGamma_ValueChanged(object sender, EventArgs e)
         {
             _cls.SetGammaDefault(((double)this.tbGamma.Value / 100));
+            lblGammaVal.Text = ((double)this.tbGamma.Value / 100) + "";
         }
 
         private void BtnReset_Click(object sender, EventArgs e)
         {
-            
+            if (this.plBrightness.Visible)
+            {
+                _cls.SetBrightnessDefault((short)_oriBrightness);
+                this.tbBrightness.Value = _oriBrightness;
+            }
+            if (this.plContrast.Visible)
+            {
+                _cls.SetContrastDefault((short)_oriContrast);
+                this.tbContrast.Value = _oriContrast;
+            }
+            if (this.plGamma.Visible)
+            {
+                _cls.SetGammaDefault(((double)_oriGamma / 100));
+                this.tbGamma.Value = _oriGamma;
+            }
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
