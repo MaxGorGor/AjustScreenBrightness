@@ -31,7 +31,7 @@ namespace AjustScreenBrightness
             ctrl2.Parent = this;
             ctrl2.Location = new Point(ctrl1.Location.X + ctrl1.Size.Width + 5, 5);
           
-            var ctrl3 = new AjustDisplayControl(new AjustScreenByDxva2());
+            var ctrl3 = new AjustDisplayControl(new AjustScreenByDxva2(this.Handle));
             ctrl3.Parent = this;
             ctrl3.Location = new Point(ctrl2.Location.X + ctrl2.Size.Width + 5, 5);
 
