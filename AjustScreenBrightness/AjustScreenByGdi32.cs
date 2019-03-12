@@ -21,6 +21,12 @@ namespace AjustScreenBrightness
 
         IntPtr _screenHandle = Native.user32.GetDC(IntPtr.Zero);
 
+        public AjustScreenByGdi32()
+        {
+            _propRange.Gamma.Maximun = 2;
+            _propRange.Gamma.Minimun = 0;
+        }
+
         public override short GetBrightnessDefault()
         {
             throw new NotImplementedException();

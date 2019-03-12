@@ -17,6 +17,9 @@ namespace AjustScreenBrightness.Abstract
         public abstract bool AllowBrightness { get; }
         public abstract bool AllowContrast { get; }
         public abstract bool AllowGamma { get; }
+        public virtual ScreenPropRange PropRange { get { return _propRange; } }
+
+        internal ScreenPropRange _propRange = new ScreenPropRange();
 
         private List<ushort> AllScreenHandle = new List<ushort>();
         

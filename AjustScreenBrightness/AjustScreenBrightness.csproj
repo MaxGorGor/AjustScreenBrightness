@@ -68,6 +68,7 @@
     <Compile Include="Model\Ramp.cs" />
     <Compile Include="Model\ScreenDisplay.cs" />
     <Compile Include="Model\ScreenConfig.cs" />
+    <Compile Include="Model\ScreenPropRange.cs" />
     <Compile Include="NativeImp\Native_dxva2_dll.cs" />
     <Compile Include="NativeImp\Native_gdi32_dll.cs" />
     <Compile Include="NativeImp\Native_Kernel32_dll.cs" />
