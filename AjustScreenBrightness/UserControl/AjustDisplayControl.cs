@@ -41,12 +41,15 @@ namespace AjustScreenBrightness.UserControl
             this.btnOK.Visible = false;
             this.btnCancel.Visible = false;
             this.groupBox1.Text = _cls.AjustTypeDes;
+
+            #region 尽量不要大幅度改动一下代码 , 操作不慎后果很严重 ,整个屏幕什么都看不到
             this.tbBrightness.Maximum = 100;
             this.tbBrightness.Minimum = -60;
             this.tbContrast.Maximum = 80;
             this.tbContrast.Minimum = 40;
             this.tbGamma.Maximum = 100;
             this.tbGamma.Minimum = 20;
+            #endregion
 
             this.plBrightness.Visible = _cls.AllowBrightness;
             this.plContrast.Visible = _cls.AllowContrast;

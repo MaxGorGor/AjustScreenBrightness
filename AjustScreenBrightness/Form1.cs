@@ -22,18 +22,20 @@ namespace AjustScreenBrightness
             this.MinimizeBox = false;
             this.ControlBox = false;
 
-            AjustScreenByGdi32 cls1 = new AjustScreenByGdi32();
-            var ctrl1 = new AjustDisplayControl(cls1);
+            
+            var ctrl1 = new AjustDisplayControl(new AjustScreenByGdi32());
             ctrl1.Parent = this;
             ctrl1.Location = new Point(5, 5);
-          
-
-            AjustScreenByIgfxDHLib cls2 = new AjustScreenByIgfxDHLib();
-            var ctrl2 = new AjustDisplayControl(cls2);
+                 
+            var ctrl2 = new AjustDisplayControl(new AjustScreenByIgfxDHLib());
             ctrl2.Parent = this;
             ctrl2.Location = new Point(ctrl1.Location.X + ctrl1.Size.Width + 5, 5);
+          
+            var ctrl3 = new AjustDisplayControl(new AjustScreenByDxva2());
+            ctrl3.Parent = this;
+            ctrl3.Location = new Point(ctrl2.Location.X + ctrl2.Size.Width + 5, 5);
 
-            this.Size = new Size(ctrl2.Location.X + ctrl2.Size.Width + 25, ctrl1.Size.Height + 50);
+            this.Size = new Size(ctrl3.Location.X + ctrl2.Size.Width + 25, ctrl1.Size.Height + 50);
 
 
 

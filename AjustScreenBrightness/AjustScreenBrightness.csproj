@@ -54,6 +54,8 @@
     <Compile Include="AjustScreenByIgfxDHLib.cs" />
     <Compile Include="AjustScreenByGdi32.cs" />
     <Compile Include="Abstract\AjustScreenClass.cs" />
+    <Compile Include="Enum\NativeConstantsEnum.cs" />
+    <Compile Include="Enum\McDisplayTechnologyTypeEnum.cs" />
     <Compile Include="Enum\ScreenColorEnum.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -62,10 +64,13 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Imp\IAjustScreen.cs" />
+    <Compile Include="Model\PhysicalMonitor.cs" />
     <Compile Include="Model\Ramp.cs" />
     <Compile Include="Model\ScreenDisplay.cs" />
     <Compile Include="Model\ScreenConfig.cs" />
-    <Compile Include="NativeImp\Native_gdi32_DLL.cs" />
+    <Compile Include="NativeImp\Native_dxva2_dll.cs" />
+    <Compile Include="NativeImp\Native_gdi32_dll.cs" />
+    <Compile Include="NativeImp\Native_Kernel32_dll.cs" />
     <Compile Include="NativeImp\Native_user32_dll.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -100,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjustScreenByDxva2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

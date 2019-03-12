@@ -13,6 +13,9 @@ namespace AjustScreenBrightness.NativeImp
         {
             [DllImport("user32.dll")]
             public static extern IntPtr GetDC(IntPtr hWnd);
+
+            [DllImport("user32.dll")]
+            public static extern IntPtr MonitorFromWindow([In] IntPtr hwnd, uint dwFlags);
         }
   
     }

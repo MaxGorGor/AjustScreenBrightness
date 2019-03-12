@@ -71,7 +71,7 @@ namespace AjustScreenBrightness
                 //    ));
 
                 var tmp = (ushort)(i * 255 * val);
-
+ 
                 ramp.Red[i] = ramp.Green[i] = ramp.Blue[i] 
                     = (ushort)(Math.Max(ushort.MinValue, Math.Min(ushort.MaxValue, tmp)));
             }
