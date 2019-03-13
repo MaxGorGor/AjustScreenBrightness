@@ -43,12 +43,12 @@ namespace AjustScreenBrightness.UserControl
             this.groupBox1.Text = _cls.AjustTypeDes;
 
             #region 尽量不要大幅度改动一下代码 , 操作不慎后果很严重 ,整个屏幕什么都看不到
-            this.tbBrightness.Maximum = _cls.PropRange.Brightness.Maximun;
-            this.tbBrightness.Minimum = _cls.PropRange.Brightness.Minimun;
-            this.tbContrast.Maximum = _cls.PropRange.Contrast.Maximun;
-            this.tbContrast.Minimum = _cls.PropRange.Contrast.Minimun;
-            this.tbGamma.Maximum = _cls.PropRange.Gamma.Maximun;
-            this.tbGamma.Minimum = _cls.PropRange.Gamma.Minimun;
+            this.tbBrightness.Maximum = (int)_cls.PropRange.Brightness.Maximun;
+            this.tbBrightness.Minimum = (int)_cls.PropRange.Brightness.Minimun;
+            this.tbContrast.Maximum = (int)_cls.PropRange.Contrast.Maximun;
+            this.tbContrast.Minimum = (int)_cls.PropRange.Contrast.Minimun;
+            this.tbGamma.Maximum = (int)(_cls.PropRange.Gamma.Maximun * 100);
+            this.tbGamma.Minimum = (int)(_cls.PropRange.Gamma.Minimun * 100);
             #endregion
 
             this.plBrightness.Visible = _cls.AllowBrightness;
@@ -71,9 +71,10 @@ namespace AjustScreenBrightness.UserControl
 
             if (_cls.AllowGamma)
             {
-                this.tbGamma.Maximum *= 100;
-                this.tbGamma.Minimum *= 100;
-                this.tbGamma.Value = (int)(_cls.GetGammaDefault() * 100);
+                var val = (int)(_cls.GetGammaDefault() * 100);
+                this.tbGamma.Maximum = Math.Max(val, this.tbGamma.Maximum);
+                this.tbGamma.Minimum = Math.Min(val, this.tbGamma.Minimum);
+                this.tbGamma.Value = val;
                 _oriGamma = this.tbGamma.Value;
                 lblGammaVal.Text = ((double)this.tbGamma.Value / 100) + "";
             }

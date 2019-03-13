@@ -14,8 +14,8 @@ namespace AjustScreenBrightness.Model
 
         public class Range
         {
-            public int Maximun;
-            public int Minimun; 
+            public float Maximun;
+            public float Minimun; 
         }
     }
 }

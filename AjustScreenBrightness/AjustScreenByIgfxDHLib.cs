@@ -45,10 +45,10 @@ namespace AjustScreenBrightness
 
             _propRange.Brightness.Maximun = (int)_screenModel.Device[0].Brightness.values.fMax;
             _propRange.Brightness.Minimun = (int)_screenModel.Device[0].Brightness.values.fMin;
-            _propRange.Contrast.Maximun = (int)_screenModel.Device[0].Contrast.values.fMax;
+            _propRange.Contrast.Maximun = 80;//(int)_screenModel.Device[0].Contrast.values.fMax;
             _propRange.Contrast.Minimun = (int)_screenModel.Device[0].Contrast.values.fMin;
             _propRange.Gamma.Maximun = (int)_screenModel.Device[0].Gamma.values.fMax;
-            _propRange.Gamma.Minimun = (int)_screenModel.Device[0].Gamma.values.fMin;
+            _propRange.Gamma.Minimun = 0.4f;//(int)_screenModel.Device[0].Gamma.values.fMin;
         }
 
         public override short GetBrightnessDefault()
