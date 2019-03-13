@@ -1,0 +1,16 @@
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\AjustScreenBrightness.exe.config
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\AjustScreenBrightness.exe
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\AjustScreenBrightness.pdb
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\igfxDHLib.dll
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.Properties.Resources.resources
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.UserControl.AjustDisplayControl.resources
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.csproj.GenerateResource.cache
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.csproj.CoreCompileInputs.cache
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.csproj.CopyComplete
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.exe
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.pdb
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\AjustScreenBrightness.exe.manifest
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\Release\AjustScreenBrightness.application
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.csprojAssemblyReference.cache
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.exe.manifest
+D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\Release\AjustScreenBrightness.application
