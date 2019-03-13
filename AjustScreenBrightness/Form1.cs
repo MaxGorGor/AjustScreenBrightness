@@ -20,9 +20,9 @@ namespace AjustScreenBrightness
 
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.ControlBox = false;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
-            
+
             var ctrl1 = new AjustDisplayControl(new AjustScreenByGdi32());
             ctrl1.Parent = this;
             ctrl1.Location = new Point(5, 5);
