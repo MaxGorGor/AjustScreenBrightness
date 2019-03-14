@@ -23,8 +23,8 @@ namespace AjustScreenBrightness
 
         public AjustScreenByGdi32()
         {
-            _propRange.Gamma.Maximun = 2;
-            _propRange.Gamma.Minimun = 0;
+            _propRange.Gamma.Maximun = 1;
+            _propRange.Gamma.Minimun = 0.5f;
         }
 
         public override short GetBrightnessDefault()
@@ -76,12 +76,16 @@ namespace AjustScreenBrightness
                 //    Math.Max(0, Math.Pow((i + 1) / 256.0, gamma * 0.1) * 65535 + 0.5)
                 //    ));
 
+                //     ramp.Red[i] = ramp.Green[i] = ramp.Blue[i] =
+                //(ushort)(Math.Min(65535, Math.Max(0, Math.Pow((i + 1) / 256.0, val * 0.1) * 65535 + 0.5)));
+
                 var tmp = (ushort)(i * 255 * val);
- 
-                ramp.Red[i] = ramp.Green[i] = ramp.Blue[i] 
+
+                ramp.Red[i] = ramp.Green[i] = ramp.Blue[i]
                     = (ushort)(Math.Max(ushort.MinValue, Math.Min(ushort.MaxValue, tmp)));
             }
             var bok = Native.gdi32.SetDeviceGammaRamp(_screenHandle, ref ramp);
+
             return bok;
         }
 

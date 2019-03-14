@@ -1,4 +1,5 @@
-﻿using AjustScreenBrightness.UserControl;
+﻿using AjustScreenBrightness.Abstract;
+using AjustScreenBrightness.UserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,20 +23,20 @@ namespace AjustScreenBrightness
             this.MinimizeBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 
+            AjustScreenClass[] classes = { new AjustScreenByGdi32(), new AjustScreenByDxva2(this.Handle) };
 
-            var ctrl1 = new AjustDisplayControl(new AjustScreenByGdi32());
-            ctrl1.Parent = this;
-            ctrl1.Location = new Point(5, 5);
-                 
-            var ctrl2 = new AjustDisplayControl(new AjustScreenByIgfxDHLib());
-            ctrl2.Parent = this;
-            ctrl2.Location = new Point(ctrl1.Location.X + ctrl1.Size.Width + 5, 5);
-          
-            var ctrl3 = new AjustDisplayControl(new AjustScreenByDxva2(this.Handle));
-            ctrl3.Parent = this;
-            ctrl3.Location = new Point(ctrl2.Location.X + ctrl2.Size.Width + 5, 5);
+            AjustDisplayControl ctrl = null;
+            int maxWidth = 0;
 
-            this.Size = new Size(ctrl3.Location.X + ctrl2.Size.Width + 25, ctrl1.Size.Height + 50);
+            for(int i = 0; i < classes.Length; i++)
+            {
+                ctrl = new AjustDisplayControl(classes[i]);
+                ctrl.Parent = this;
+                ctrl.Location = new Point(5 * (i + 1) + ctrl.Size.Width * (i), 5);
+                maxWidth = ctrl.Location.X + ctrl.Size.Width;
+            }
+ 
+            this.Size = new Size(maxWidth + 25, ctrl.Size.Height + 50);
 
 
 

@@ -42,26 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AjustScreenBrightness.exe" size="23088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AjustScreenBrightness.exe" size="59952">
       <assemblyIdentity name="AjustScreenBrightness" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>T+yOuHTTZodUiSmxCkC7Ug1YAj2aInCy4CMHbizkcb0=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="igfxDHLib.dll" size="123920">
-      <assemblyIdentity name="igfxDHLib" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uLcNqxeDeQGbheJINxLnp7YLCrmUgU0LyTQPjmAruT4=</dsig:DigestValue>
+        <dsig:DigestValue>CcCeM3grYsQlUiTxuDJ9gQtpzURy40DVD0Md61PBDu4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,6 +60,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DLL\igfxDHLib.dll" size="77312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2cW+KDtQ4WSu0Mv88HaM0QTOUlD8CoDpYQq+X3PM6VA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

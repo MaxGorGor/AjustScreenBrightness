@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AjustScreenBrightness.Abstract;
+using AjustScreenBrightness.NativeImp;
 
 namespace AjustScreenBrightness.UserControl
 {
@@ -105,8 +106,28 @@ namespace AjustScreenBrightness.UserControl
 
         private void TbGamma_ValueChanged(object sender, EventArgs e)
         {
-            _cls.SetGammaDefault(((double)this.tbGamma.Value / 100));
+            var bok = _cls.SetGammaDefault(((double)this.tbGamma.Value / 100));
+
             lblGammaVal.Text = ((double)this.tbGamma.Value / 100) + "";
+
+            if (bok)
+            {
+                this.lblTip.Visible = false;
+            }
+            else
+            {
+              
+ 
+                var code = Native.Kernel32.GetLastError();
+                uint dwFlags = Native.Kernel32.FORMAT_MESSAGE_FROM_SYSTEM | Native.Kernel32.FORMAT_MESSAGE_IGNORE_INSERTS;
+
+                StringBuilder lpBuffer = new StringBuilder(260);    
+                int count = Native.Kernel32.FormatMessage(dwFlags, IntPtr.Zero, code, 0, lpBuffer, 260, IntPtr.Zero);
+
+                this.lblTip.Visible = true;
+                this.lblTip.Text = "setting false:" + lpBuffer.ToString();
+
+            }
         }
 
         private void BtnReset_Click(object sender, EventArgs e)

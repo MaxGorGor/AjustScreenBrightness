@@ -33,20 +33,21 @@ namespace AjustScreenBrightness.UserControl
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.plGamma = new System.Windows.Forms.Panel();
+            this.lblGammaVal = new System.Windows.Forms.Label();
             this.tbGamma = new System.Windows.Forms.TrackBar();
             this.lblGamma = new System.Windows.Forms.Label();
             this.plContrast = new System.Windows.Forms.Panel();
+            this.lblContrastVal = new System.Windows.Forms.Label();
             this.lblContrast = new System.Windows.Forms.Label();
             this.tbContrast = new System.Windows.Forms.TrackBar();
             this.plBrightness = new System.Windows.Forms.Panel();
+            this.lblBrightnessVal = new System.Windows.Forms.Label();
             this.lblBright = new System.Windows.Forms.Label();
             this.tbBrightness = new System.Windows.Forms.TrackBar();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnOK = new System.Windows.Forms.Button();
-            this.lblBrightnessVal = new System.Windows.Forms.Label();
-            this.lblContrastVal = new System.Windows.Forms.Label();
-            this.lblGammaVal = new System.Windows.Forms.Label();
+            this.lblTip = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.plGamma.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGamma)).BeginInit();
@@ -58,6 +59,7 @@ namespace AjustScreenBrightness.UserControl
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblTip);
             this.groupBox1.Controls.Add(this.plGamma);
             this.groupBox1.Controls.Add(this.plContrast);
             this.groupBox1.Controls.Add(this.plBrightness);
@@ -81,6 +83,15 @@ namespace AjustScreenBrightness.UserControl
             this.plGamma.Name = "plGamma";
             this.plGamma.Size = new System.Drawing.Size(309, 53);
             this.plGamma.TabIndex = 15;
+            // 
+            // lblGammaVal
+            // 
+            this.lblGammaVal.AutoSize = true;
+            this.lblGammaVal.Location = new System.Drawing.Point(265, 11);
+            this.lblGammaVal.Name = "lblGammaVal";
+            this.lblGammaVal.Size = new System.Drawing.Size(41, 12);
+            this.lblGammaVal.TabIndex = 12;
+            this.lblGammaVal.Text = "label3";
             // 
             // tbGamma
             // 
@@ -110,6 +121,15 @@ namespace AjustScreenBrightness.UserControl
             this.plContrast.Size = new System.Drawing.Size(309, 53);
             this.plContrast.TabIndex = 14;
             // 
+            // lblContrastVal
+            // 
+            this.lblContrastVal.AutoSize = true;
+            this.lblContrastVal.Location = new System.Drawing.Point(265, 11);
+            this.lblContrastVal.Name = "lblContrastVal";
+            this.lblContrastVal.Size = new System.Drawing.Size(41, 12);
+            this.lblContrastVal.TabIndex = 11;
+            this.lblContrastVal.Text = "label2";
+            // 
             // lblContrast
             // 
             this.lblContrast.AutoSize = true;
@@ -136,6 +156,15 @@ namespace AjustScreenBrightness.UserControl
             this.plBrightness.Name = "plBrightness";
             this.plBrightness.Size = new System.Drawing.Size(309, 53);
             this.plBrightness.TabIndex = 13;
+            // 
+            // lblBrightnessVal
+            // 
+            this.lblBrightnessVal.AutoSize = true;
+            this.lblBrightnessVal.Location = new System.Drawing.Point(265, 11);
+            this.lblBrightnessVal.Name = "lblBrightnessVal";
+            this.lblBrightnessVal.Size = new System.Drawing.Size(41, 12);
+            this.lblBrightnessVal.TabIndex = 10;
+            this.lblBrightnessVal.Text = "label1";
             // 
             // lblBright
             // 
@@ -181,32 +210,14 @@ namespace AjustScreenBrightness.UserControl
             this.btnOK.Text = "确定";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
-            // lblBrightnessVal
+            // lblTip
             // 
-            this.lblBrightnessVal.AutoSize = true;
-            this.lblBrightnessVal.Location = new System.Drawing.Point(265, 11);
-            this.lblBrightnessVal.Name = "lblBrightnessVal";
-            this.lblBrightnessVal.Size = new System.Drawing.Size(41, 12);
-            this.lblBrightnessVal.TabIndex = 10;
-            this.lblBrightnessVal.Text = "label1";
-            // 
-            // lblContrastVal
-            // 
-            this.lblContrastVal.AutoSize = true;
-            this.lblContrastVal.Location = new System.Drawing.Point(265, 11);
-            this.lblContrastVal.Name = "lblContrastVal";
-            this.lblContrastVal.Size = new System.Drawing.Size(41, 12);
-            this.lblContrastVal.TabIndex = 11;
-            this.lblContrastVal.Text = "label2";
-            // 
-            // lblGammaVal
-            // 
-            this.lblGammaVal.AutoSize = true;
-            this.lblGammaVal.Location = new System.Drawing.Point(265, 11);
-            this.lblGammaVal.Name = "lblGammaVal";
-            this.lblGammaVal.Size = new System.Drawing.Size(41, 12);
-            this.lblGammaVal.TabIndex = 12;
-            this.lblGammaVal.Text = "label3";
+            this.lblTip.AutoSize = true;
+            this.lblTip.Location = new System.Drawing.Point(23, 201);
+            this.lblTip.Name = "lblTip";
+            this.lblTip.Size = new System.Drawing.Size(29, 12);
+            this.lblTip.TabIndex = 13;
+            this.lblTip.Text = "提示";
             // 
             // AjustDisplayControl
             // 
@@ -216,6 +227,7 @@ namespace AjustScreenBrightness.UserControl
             this.Name = "AjustDisplayControl";
             this.Size = new System.Drawing.Size(321, 240);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.plGamma.ResumeLayout(false);
             this.plGamma.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbGamma)).EndInit();
@@ -247,5 +259,6 @@ namespace AjustScreenBrightness.UserControl
         private Label lblGammaVal;
         private Label lblContrastVal;
         private Label lblBrightnessVal;
+        private Label lblTip;
     }
 }

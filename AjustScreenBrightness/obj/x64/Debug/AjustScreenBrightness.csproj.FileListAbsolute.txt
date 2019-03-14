@@ -12,5 +12,3 @@ D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\x64\Debug\Aju
 D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\x64\Debug\AjustScreenBrightness.exe
 D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\x64\Debug\AjustScreenBrightness.pdb
 D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\x64\Debug\AjustScreenBrightness.csprojAssemblyReference.cache
-D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\bin\x64\Debug\igfxDHLib.dll
-D:\Code\GithubCode\AjustScreenBrightness\AjustScreenBrightness\obj\x64\Debug\AjustScreenBrightness.csproj.CopyComplete

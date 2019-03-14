@@ -42,26 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AjustScreenBrightness.exe" size="22576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AjustScreenBrightness.exe" size="59440">
       <assemblyIdentity name="AjustScreenBrightness" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Y84Xj7RLXSeWrVpKHGQbXVSXc6UVrSm+xO5RdF4CN9A=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="igfxDHLib.dll" size="77312">
-      <assemblyIdentity name="igfxDHLib" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2cW+KDtQ4WSu0Mv88HaM0QTOUlD8CoDpYQq+X3PM6VA=</dsig:DigestValue>
+        <dsig:DigestValue>GV9idIr71EyR4DZ0puFNaDfkNA8mbytOrMG9YVEBo2g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -72,6 +60,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="DLL\igfxDHLib.dll" size="77312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2cW+KDtQ4WSu0Mv88HaM0QTOUlD8CoDpYQq+X3PM6VA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
