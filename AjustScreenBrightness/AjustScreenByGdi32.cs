@@ -3,6 +3,7 @@ using AjustScreenBrightness.Model;
 using AjustScreenBrightness.NativeImp;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,11 +21,13 @@ namespace AjustScreenBrightness
         public override bool AllowGamma => true;
 
         IntPtr _screenHandle = Native.user32.GetDC(IntPtr.Zero);
+        IntPtr _screenHandle2 = Graphics.FromHwnd(IntPtr.Zero).GetHdc();
 
         public AjustScreenByGdi32()
         {
             _propRange.Gamma.Maximun = 1;
             _propRange.Gamma.Minimun = 0.5f;
+            _screenHandle = _screenHandle2;
         }
 
         public override short GetBrightnessDefault()
